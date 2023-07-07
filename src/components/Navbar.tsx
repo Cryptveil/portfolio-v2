@@ -1,9 +1,11 @@
-import React from 'react'
+import { useState } from 'react'
+import { motion } from "framer-motion"
 
 export default function Navbar() {
+    const [toggle, setToggle] = useState(false)
     return (
-        <nav>
-            <h1>hello</h1>
+        <nav className=''>
+            <h1>this is a navbar trust me</h1>
         </nav>
     )
 }
