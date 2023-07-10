@@ -39,9 +39,9 @@ export default function Navbar() {
 
             {!matches && (
                 <div className='space-y-1 cursor-pointer' onClick={() => setToggle((prevToggle) => !prevToggle)}>
-                    <span className='block h-0.5 w-8 bg-black'></span>
                     <span className='block h-0.5 w-6 bg-black'></span>
-                    <span className='block h-0.5 w-4 bg-black'></span>
+                    <span className='block h-0.5 w-6 bg-black'></span>
+                    <span className='block h-0.5 w-6 bg-black'></span>
                 </div>
             )}
         </nav>
