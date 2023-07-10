@@ -8,25 +8,8 @@ export default function Navbar() {
 
     return (
         <nav className='relative mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32'>
-            <svg
-                className='absolute bottom-0 left-1/2 -translate-x-1/2'
-                width="250"
-                height={4}
-                viewBox='0 0 250 4'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-            >
-                <path
-                    d='M2 2L428 2'
-                    stroke='#282828'
-                    strokeLinecap='round'
-                    strokeWidth={2} />
-            </svg>
-
-            <div></div>
-
             <h1 className='font-bold text-lg'>
-                <a href="#">navbar!</a>
+                <a href="#">Victor Hugo Buntrok</a>
             </h1>
 
             {matches && (
@@ -38,11 +21,37 @@ export default function Navbar() {
             )}
 
             {!matches && (
-                <div className='space-y-1 cursor-pointer' onClick={() => setToggle((prevToggle) => !prevToggle)}>
-                    <span className='block h-0.5 w-6 bg-black'></span>
-                    <span className='block h-0.5 w-6 bg-black'></span>
-                    <span className='block h-0.5 w-6 bg-black'></span>
+                <div className='space-y-1.5 cursor-pointer z-50' onClick={() => setToggle((prevToggle) => !prevToggle)}>
+                    <motion.span
+                        animate={{
+                            rotateZ: toggle ? 45 : 0,
+                            y: toggle ? 8 : 0,
+                        }}
+                        className='block h-0.5 w-6 bg-white'
+                    />
+                    <motion.span
+                        animate={{ width: toggle ? 0 : 24 }}
+                        className='block h-0.5 w-6 bg-white' />
+                    <motion.span
+                        animate={{
+                            rotateZ: toggle ? -45 : 0,
+                            y: toggle ? -8 : 0,
+                        }}
+                        className='block h-0.5 w-6 bg-white'
+                    />
                 </div>
+            )}
+            {toggle && !matches && (
+                <motion.div
+                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: 25 }}
+                    className='fixed bg-black bottom-0 left-0 w-full h-screen items-center justify-center flex'>
+                    <div className='flex flex-col gap-24 text-lg font-semibold'>
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Projects</a>
+                    </div>
+                </motion.div>
             )}
         </nav>
     )
