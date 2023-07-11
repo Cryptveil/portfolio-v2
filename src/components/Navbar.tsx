@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <nav className='relative mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32'>
             <h1 className='font-bold text-lg'>
-                <a href="#">Victor Hugo Buntrok</a>
+                <a href="#">Victor Hugo</a>
             </h1>
 
             {matches && (
