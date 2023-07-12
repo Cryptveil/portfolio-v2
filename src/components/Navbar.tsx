@@ -7,9 +7,9 @@ export default function Navbar() {
     const matches = useMediaQuery("(min-width:1280px)")
 
     return (
-        <nav className='relative mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32'>
+        <nav className='relative mx-8 mb-12 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32'>
             <h1 className='font-bold text-lg'>
-                <a href="#">Victor Hugo</a>
+                <a href="#">Victor Hugo.</a>
             </h1>
 
             {matches && (
