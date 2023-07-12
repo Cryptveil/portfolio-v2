@@ -7,15 +7,15 @@ export default function Navbar() {
     const matches = useMediaQuery("(min-width:1280px)")
 
     return (
-        <nav className='relative mx-8 mb-12 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32'>
+        <nav className='relative mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32'>
             <h1 className='font-bold text-lg'>
                 <a href="#">Victor Hugo.</a>
             </h1>
 
             {matches && (
                 <div className='flex gap-12'>
-                    <a href="">Home</a>
                     <a href="">About</a>
+                    <a href="">Skills</a>
                     <a href="">Projects</a>
                 </div>
             )}
@@ -45,7 +45,7 @@ export default function Navbar() {
                 <motion.div
                     animate={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 25 }}
-                    className='fixed bg-black bottom-0 left-0 w-full h-screen items-center justify-center flex'>
+                    className='fixed bg-black bottom-0 left-0 w-full h-screen items-center justify-center flex z-30'>
                     <div className='flex flex-col gap-24 text-lg font-semibold'>
                         <a href="">Home</a>
                         <a href="">About</a>
