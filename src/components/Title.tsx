@@ -1,8 +1,9 @@
 import { Typewriter } from 'react-simple-typewriter'
+import "@fontsource/roboto"
 
 export default function Title() {
     return (
-        <div className='flex items-center flex-col'>
+        <div className="flex items-center flex-col select-none">
             <h1 className='text-2xl font-bold'>
                 Hey there! I'm Victor Hugo.
             </h1>
