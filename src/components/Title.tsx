@@ -2,18 +2,24 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export default function Title() {
     return (
-        <h1>
+        <div className='flex items-center flex-col'>
+            <h1 className='text-2xl font-bold'>
+                Hey there! I'm Victor Hugo.
+            </h1>
             <span>
-                <Typewriter
-                    words={[' Eat', ' Sleep', ' Code', ' Repeat!']}
-                    loop={0}
-                    cursor
-                    cursorStyle='|'
-                    typeSpeed={70}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                />
+                I'm a
+                <span className='font-semibold text-violet-500'>
+                    <Typewriter
+                        words={[' Fullstack Developer.', ' Network Administrator.', ' Linux Superuser.']}
+                        loop={0}
+                        cursor
+                        cursorStyle='|'
+                        typeSpeed={50}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
+                </span>
             </span>
-        </h1>
+        </div>
     )
 }
