@@ -1,8 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title" 
+import "@fontsource/roboto"
 ---
 
 <Layout title="Victor Hugo Buntrok">
     <Title client:load/>
 </Layout>
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+</style>

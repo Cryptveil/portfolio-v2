@@ -1,5 +1,4 @@
 import { Typewriter } from 'react-simple-typewriter'
-import "@fontsource/roboto"
 
 export default function Title() {
     return (
