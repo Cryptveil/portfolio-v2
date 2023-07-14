@@ -3,10 +3,10 @@ import { Typewriter } from 'react-simple-typewriter'
 export default function Title() {
     return (
         <div className="flex items-center flex-col select-none">
-            <h1 className='text-2xl font-bold'>
+            <h1 className='text-2xl xl:text-6xl font-bold'>
                 Hey there! I'm Victor Hugo.
             </h1>
-            <span>
+            <span className='text-md xl:text-2xl'>
                 I'm a
                 <span className='font-semibold text-violet-500'>
                     <Typewriter
