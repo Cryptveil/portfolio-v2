@@ -1,25 +1,29 @@
 {
-  "name": "portfolio-v2",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/react": "^2.2.1",
-    "@astrojs/tailwind": "^4.0.0",
-    "@fontsource/roboto": "^5.0.5",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "astro": "^2.7.4",
-    "framer-motion": "^10.12.18",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-simple-typewriter": "^5.0.1",
-    "tailwindcss": "^3.3.2"
-  }
+	"name": "portfolio-v2",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"i18n:install": "astro-i18n install",
+		"i18n:sync": "astro-i18n sync",
+		"i18n:extract:keys": "astro-i18n extract:keys"
+	},
+	"dependencies": {
+		"@astrojs/react": "^2.2.1",
+		"@astrojs/tailwind": "^4.0.0",
+		"@fontsource/roboto": "^5.0.5",
+		"@types/react": "^18.2.14",
+		"@types/react-dom": "^18.2.6",
+		"astro": "^2.7.4",
+		"astro-i18n": "^1.8.1",
+		"framer-motion": "^10.12.18",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-simple-typewriter": "^5.0.1",
+		"tailwindcss": "^3.3.2"
+	}
 }
