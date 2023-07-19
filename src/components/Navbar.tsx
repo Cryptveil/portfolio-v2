@@ -47,9 +47,9 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: 25 }}
                     className='fixed bg-black bottom-0 top-0 w-full h-screen items-center justify-center flex z-30'>
                     <div className='flex flex-col gap-24 text-lg font-semibold'>
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#projects">Projects</a>
+                        <a href="#about" onClick={() => setToggle(false)}>About</a>
+                        <a href="#skills" onClick={() => setToggle(false)}>Skills</a>
+                        <a href="#projects" onClick={() => setToggle(false)}>Projects</a>
                     </div>
                 </motion.div>
             )}
