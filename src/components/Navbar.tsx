@@ -13,7 +13,7 @@ export default function Navbar() {
             </h1>
 
             {matches && (
-                <div className='flex gap-12 pr-4 pb-4'>
+                <div className='flex gap-12 pr-4 pb-4 font-bold'>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
