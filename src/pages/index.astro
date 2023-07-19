@@ -1,14 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Title from "../components/Title" 
-import "@fontsource/roboto"
+import Title from "../components/Title";
+import "@fontsource/roboto";
 ---
 
 <Layout title="Victor Hugo Buntrok">
-    <Title client:load/>
+  <Title client:load />
+  <div>
+    <h1 id="about">About me</h1>
+    <p>
+      My name is Victor Hugo, but my friends usually call me just Hugo.
+      Currently a Network Administrator with a passion for programming. I'm a
+      quick learner and I'm always striving to be the best.
+    </p>
+  </div>
 </Layout>
 <style>
-    body {
-        font-family: "Roboto", sans-serif;
-    }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
 </style>

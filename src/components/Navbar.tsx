@@ -7,21 +7,21 @@ export default function Navbar() {
     const matches = useMediaQuery("(min-width:1280px)")
 
     return (
-        <nav className='select-none relative mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32'>
-            <h1 className='font-bold text-lg'>
+        <nav className='sticky top-0 bg-black border-b border-gray-800 bg-opacity-70 backdrop-blur select-none w-full flex justify-between items-center pt-12 pb-6 font-medium mb-24'>
+            <h1 className='font-bold text-lg pl-4 pb-4'>
                 <a href="#">Victor Hugo.</a>
             </h1>
 
             {matches && (
-                <div className='flex gap-12'>
-                    <a href="">About</a>
+                <div className='flex gap-12 pr-4 pb-4'>
+                    <a href="#about">About</a>
                     <a href="">Skills</a>
                     <a href="">Projects</a>
                 </div>
             )}
 
             {!matches && (
-                <div className='space-y-1.5 cursor-pointer z-50' onClick={() => setToggle((prevToggle) => !prevToggle)}>
+                <div className='space-y-1.5 cursor-pointer z-50 pr-4 pb-4' onClick={() => setToggle((prevToggle) => !prevToggle)}>
                     <motion.span
                         animate={{
                             rotateZ: toggle ? 45 : 0,
