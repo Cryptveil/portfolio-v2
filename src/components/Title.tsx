@@ -12,8 +12,8 @@ export default function Title() {
                     <Typewriter
                         words={[' Fullstack Developer.', ' Network Administrator.', ' Linux Superuser.']}
                         loop={0}
-                        cursor
-                        cursorStyle='|'
+                        // cursor
+                        // cursorStyle='_'
                         typeSpeed={50}
                         deleteSpeed={50}
                         delaySpeed={1000}
