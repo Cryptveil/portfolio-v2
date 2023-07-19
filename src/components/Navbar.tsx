@@ -15,8 +15,8 @@ export default function Navbar() {
             {matches && (
                 <div className='flex gap-12 pr-4 pb-4'>
                     <a href="#about">About</a>
-                    <a href="">Skills</a>
-                    <a href="">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
                 </div>
             )}
 
