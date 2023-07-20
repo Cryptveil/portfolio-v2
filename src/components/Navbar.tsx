@@ -8,12 +8,12 @@ export default function Navbar() {
 
     return (
         <nav className='sticky top-0 bg-black border-b border-gray-800 bg-opacity-70 backdrop-blur select-none w-full flex justify-between items-center pt-6 pb-3 font-medium mb-24'>
-            <h1 className='font-bold text-lg pl-4 pb-4'>
+            <h1 className='font-bold text-lg pl-4 lg:pl-8 pb-3'>
                 <a href="#">Victor Buntrok</a>
             </h1>
 
             {matches && (
-                <div className='flex gap-12 pr-4 pb-4 font-bold'>
+                <div className='flex gap-12 pr-8 pb-3 font-bold'>
                     <a href="#about" className='hover:text-violet-500'>About</a>
                     <a href="#skills" className='hover:text-violet-500'>Skills</a>
                     <a href="#projects" className='hover:text-violet-500'>Projects</a>
@@ -47,9 +47,9 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: 25 }}
                     className='fixed bg-black bottom-0 top-0 w-full h-screen items-center justify-center flex z-30'>
                     <div className='flex flex-col gap-24 text-lg font-semibold'>
-                        <a href="#about" onClick={() => setToggle(false)}>About</a>
-                        <a href="#skills" onClick={() => setToggle(false)}>Skills</a>
-                        <a href="#projects" onClick={() => setToggle(false)}>Projects</a>
+                        <a href="#about" className='hover:text-violet-500' onClick={() => setToggle(false)}>About</a>
+                        <a href="#skills" className='hover:text-violet-500' onClick={() => setToggle(false)}>Skills</a>
+                        <a href="#projects" className='hover:text-violet-500' onClick={() => setToggle(false)}>Projects</a>
                     </div>
                 </motion.div>
             )}
