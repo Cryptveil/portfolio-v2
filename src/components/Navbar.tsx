@@ -16,15 +16,15 @@ export default function Navbar() {
                 <div className='flex gap-12 pr-8 pb-3 font-bold'>
                     <a href="#about" className='group hover:text-accent transition duration-300'>
                         About
-                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-accent" />
+                        <span className="block max-w-0 group-hover:max-w-full rounded-full transition-all duration-200 h-0.5 bg-accent" />
                     </a>
                     <a href="#skills" className='group hover:text-accent transition duration-300'>
                         Skills
-                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-accent" />
+                        <span className="block max-w-0 group-hover:max-w-full rounded-full transition-all duration-200 h-0.5 bg-accent" />
                     </a>
                     <a href="#projects" className='group hover:text-accent transition duration-300'>
                         Projects
-                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-accent" />
+                        <span className="block max-w-0 group-hover:max-w-full rounded-full transition-all duration-200 h-0.5 bg-accent" />
                     </a>
                 </div>
             )}
