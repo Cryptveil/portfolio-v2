@@ -11,6 +11,8 @@ module.exports = {
             'light-secondary': '#e2ccff',
             'light-accent': '#7020df',
             'light-background': '#fafafa',
+            'black': '#050505',
+            'white': '#e5e7eb'
         },
         extend: {},
     },
