@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         colors: {
             'primary': '#a38fff',
-            'secondary': '#160033',
+            'secondary': '#060024',
             'accent': '#823ae9',
             'background': '#050505',
             'light-primary': '#a38fff',
