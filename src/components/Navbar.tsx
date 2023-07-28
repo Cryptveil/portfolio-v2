@@ -7,7 +7,7 @@ export default function Navbar() {
     const matches = useMediaQuery("(min-width:1280px)")
 
     return (
-        <nav className='sticky top-0 bg-background border-b border-secondary bg-opacity-70 backdrop-blur select-none w-full flex justify-between items-center pt-6 pb-3 font-medium mb-24'>
+        <nav className='fixed top-0 bg-background border-b border-secondary bg-opacity-70 backdrop-blur select-none w-full flex justify-between items-center pt-6 pb-3 font-medium'>
             <h1 className='font-bold text-lg pl-4 lg:pl-8 pb-3'>
                 <a href="#">Victor Buntrok</a>
             </h1>

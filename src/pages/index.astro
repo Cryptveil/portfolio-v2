@@ -5,11 +5,15 @@ import "@fontsource/roboto";
 ---
 
 <Layout title="Victor Hugo Buntrok">
-  <Title client:load />
-  <div class="h-screen"></div>
-  <div id="about" class="flex flex-col gap-12 bg-secondary p-12">
+  <div class="h-screen flex justify-center items-center">
+    <Title client:load />
+  </div>
+  <div
+    id="about"
+    class="flex flex-col justify-center gap-12 h-screen bg-secondary p-12"
+  >
     <h1
-      class="pt-12 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
+      class="mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
       About me
     </h1>
@@ -35,9 +39,9 @@ import "@fontsource/roboto";
       </p>
     </div>
   </div>
-  <div id="skills" class="h-screen p-12">
+  <div id="skills" class="h-screen p-12 flex flex-col gap-12 justify-center">
     <h1
-      class="pt-12 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
+      class="mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
       Skills
     </h1>
@@ -46,8 +50,15 @@ import "@fontsource/roboto";
       NextJS, Astro, Vercel, Git, Linux, Docker, SST, Vue, Svelte
     </p>
   </div>
-  <div id="projects" class="h-screen bg-white"></div>
+  <div id="projects" class="h-screen flex flex-col gap-12 justify-center">
+    <h1
+      class="mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
+    >
+      Projects
+    </h1>
+  </div>
 </Layout>
+<p class="flex justify-center">Copyright @ 2023 Victor Hugo</p>
 <style>
   body {
     font-family: "Roboto", sans-serif;
