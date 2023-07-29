@@ -2,8 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title";
 import DemoAccount from "../components/DemoAccount";
-import whisker from "/projects/whisker.png"
+import whisker from "/projects/whisker.png";
 import "@fontsource/roboto";
+import "../styles/base.css";
 ---
 
 <Layout title="Victor Hugo Buntrok">
@@ -59,7 +60,9 @@ import "@fontsource/roboto";
       Projects
     </h1>
     <div class="flex justify-center">
-      <div class="max-w-sm rounded overflow-hidden shadow-md shadow-accent bg-secondary">
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-md shadow-accent bg-secondary"
+      >
         <img
           class="w-full pointer-events-none"
           src={whisker}
