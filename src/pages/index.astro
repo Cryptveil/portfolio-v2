@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title";
-import DemoAccount from "../components/DemoAccount";
+import ProjectCard from "../components/ProjectCard.astro";
 import whisker from "/projects/whisker.png";
 import "@fontsource/roboto";
 import "../styles/base.css";
@@ -58,107 +58,18 @@ import "../styles/base.css";
       Projects
     </h1>
     <div class="flex justify-center">
-      <div
-        class="max-w-sm rounded overflow-hidden shadow-md shadow-accent bg-secondary"
-      >
-        <img
-          class="w-full pointer-events-none"
-          src={whisker}
-          alt="Whisker project"
-        />
-        <div class="px-6 py-4 flex-1 flex flex-col">
-          <div class="font-bold text-xl md:text-2xl mb-2">Whisker</div>
-          <p class="text-md md:text-lg">
-            Whisker is a social media Website, and a Twitter Clone. It was
-            designed to copy Twitter's layout and design, and it has Tweets (or
-            Meows), Likes and Comments as functionalities. <span
-              class="font-bold"
-              >You need to be logged in to see the functionalities.
-            </span>
-          </p>
-          <DemoAccount
-            client:load
-            demoAccount={{ username: "demo123", password: "Jj@7TsFk" }}
-          />
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <div class="flex flex-wrap space-x-2 mt-5 pointer-events-none">
-            <h2 class="inline-block mb-3 text-xl font-bold leading-5">
-              Technologies:
-            </h2>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              TailwindCSS
-            </span>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              NextJS
-            </span>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              Typescript
-            </span>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              Clerk
-            </span>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              Prisma
-            </span>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              MySQL
-            </span>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              RadixUI
-            </span>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              Vercel
-            </span>
-            <span
-              class="px-2 py-1 mb-2 mr-2 text-xs md:text-sm font-semibold text-white bg-accent rounded-full"
-            >
-              PlanetScale
-            </span>
-          </div>
-          <div class="flex flex-wrap space-x-2 mt-5 mb-2">
-            <a
-              href="https://whisker-network.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label=""
-              class="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 shadow hover:shadow-lg hover:bg-primary hover:text-black"
-            >
-              Live Demo
-            </a>
-            <a
-              href="https://github.com/Grellheist/whisker"
-              target="_blank"
-              rel="noreferrer"
-              aria-label=""
-              class="inline-flex border hover:bg-primary shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:text-black"
-            >
-              Source Code
-            </a>
-          </div>
-        </div>
-      </div>
+      <ProjectCard
+        picture={whisker}
+        title="Whisker"
+        description="Whisker is a social media Website, and a Twitter Clone. It was designed to copy Twitter's layout and design, and it has Tweets (or Meows), Likes and Comments as functionalities. You need to be logged in to see the functionalities."
+        demo="https://whisker-network.vercel.app/"
+        source="https://github.com/Grellheist/whisker"
+      />
     </div>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </div>
-  <style>
-    body {
-      font-family: "Roboto", sans-serif;
-    }
-  </style>
 </Layout>
