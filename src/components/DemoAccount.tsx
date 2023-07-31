@@ -40,7 +40,7 @@ const DemoAccount = ({ demoAccount }: DemoAccountProps) => {
                 </button>
             </div>
             <div
-                className={`absolute w-full right-0 z-10 mt-2 origin-top-right rounded-md bg-primary text-black shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none ${isMenuOpen ? "" : "hidden"
+                className={`absolute w-full right-0 shadow-sm shadow-accent z-10 mt-2 origin-top-right rounded-md bg-black text-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none ${isMenuOpen ? "" : "hidden"
                     }`}
                 role="menu"
                 aria-orientation="vertical"
@@ -49,7 +49,7 @@ const DemoAccount = ({ demoAccount }: DemoAccountProps) => {
             >
                 <div className="py-1" role="none">
                     <p
-                        className="text-black block px-4 py-2 text-sm"
+                        className="text-white block px-4 py-2 text-md font-bold"
                         role="menuitem"
                         tabIndex={-1}
                         id="menu-item-2"
@@ -57,7 +57,7 @@ const DemoAccount = ({ demoAccount }: DemoAccountProps) => {
                         Username: {demoAccount.username}
                     </p>
                     <p
-                        className="text-black block px-4 py-2 text-sm"
+                        className="text-white block px-4 py-2 text-md font-bold"
                         role="menuitem"
                         tabIndex={-1}
                         id="menu-item-2"
