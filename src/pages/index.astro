@@ -2,8 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard.astro";
-import whisker from "/projects/whisker.png";
 import "@fontsource/roboto";
+import projects from "../utils/projectList";
 import "../styles/base.css";
 ---
 
@@ -58,25 +58,7 @@ import "../styles/base.css";
       Projects
     </h1>
     <div class="flex justify-center">
-      <ProjectCard
-        picture={whisker}
-        title="Whisker"
-        description="Whisker is a social media Website, and a Twitter Clone. It was designed to copy Twitter's layout and design, and it has Tweets (or Meows), Likes and Comments as functionalities. You need to be logged in to see the functionalities."
-        demo="https://whisker-network.vercel.app/"
-        source="https://github.com/Grellheist/whisker"
-        technologies={[
-          "TailwindCSS",
-          "NextJS",
-          "Typescript",
-          "Clerk",
-          "Prisma",
-          "MySQL",
-          "RadixUI",
-          "Vercel",
-          "PlanetScale",
-        ]}
-        account={{ username: "demo123", password: "Jj@7TsFk" }}
-      />
+      {projects.map((project) => <ProjectCard project={project} />)}
     </div>
     <style>
       body {
