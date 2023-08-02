@@ -7,7 +7,7 @@ export default function Navbar() {
     const matches = useMediaQuery("(min-width:1280px)")
 
     return (
-        <nav className='fixed top-0 bg-background border-b border-secondary bg-opacity-70 backdrop-blur select-none w-full flex justify-between items-center pt-6 pb-3 font-medium'>
+        <nav className='fixed top-0 bg-background border-b border-secondary bg-opacity-70 backdrop-blur select-none w-full flex justify-between items-center pt-6 pb-3 font-medium z-50'>
             <h1 className='font-bold text-lg pl-4 lg:pl-8 pb-3'>
                 <a href="#">Victor Buntrok</a>
             </h1>
@@ -54,7 +54,7 @@ export default function Navbar() {
                 <motion.div
                     animate={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 25 }}
-                    className='fixed bg-black bottom-0 top-0 w-full h-screen items-center justify-center flex z-30'>
+                    className='fixed bg-background bottom-0 top-0 w-full h-screen items-center justify-center flex z-30'>
                     <div className='flex flex-col gap-24 text-lg font-semibold'>
                         <a href="#about" className='hover:text-accent' onClick={() => setToggle(false)}>About</a>
                         <a href="#skills" className='hover:text-accent' onClick={() => setToggle(false)}>Skills</a>
