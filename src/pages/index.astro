@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title";
+import Skills from "../components/Skills.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import "@fontsource/roboto";
 import projects from "../utils/projectList";
@@ -76,10 +77,9 @@ import "../styles/base.css";
     >
       Skills
     </h1>
-    <p>
-      Tailwind, Typescript, Javascript, C, Rust, Python, Bootstrap, React,
-      NextJS, Astro, Vercel, Git, Linux, Docker, SST, Vue, Svelte
-    </p>
+    <div class="flex justify-center">
+      <Skills />
+    </div>
   </div>
   <div id="projects" class="flex-grow flex flex-col gap-12 justify-center">
     <h1
