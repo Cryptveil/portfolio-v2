@@ -38,7 +38,9 @@ import "../styles/base.css";
         rel="noreferrer"
         aria-label=""
       >
-        <i class="fa fa-envelope text-4xl hover:text-accent md:text-5xl cursor-pointer" aria-hidden="true"></i>
+        <i
+          class="fa fa-envelope text-4xl hover:text-accent md:text-5xl cursor-pointer"
+          aria-hidden="true"></i>
       </a>
     </div>
   </div>
@@ -97,7 +99,27 @@ import "../styles/base.css";
       Projects
     </h1>
     <div class="flex justify-evenly">
-      {projects.map((project) => <ProjectCard project={project} />)}
+      <div class="inline lg:hidden">
+        {
+          projects
+            .slice(0, 1)
+            .map((project) => <ProjectCard project={project} />)
+        }
+      </div>
+      <div class="hidden lg:flex xl:hidden space-x-8">
+        {
+          projects
+            .slice(0, 2)
+            .map((project) => <ProjectCard project={project} />)
+        }
+      </div>
+      <div class="hidden xl:inline-flex space-x-8">
+        {
+          projects
+            .slice(0, 3)
+            .map((project) => <ProjectCard project={project} />)
+        }
+      </div>
     </div>
     <style>
       body {
