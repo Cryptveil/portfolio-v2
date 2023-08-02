@@ -6,7 +6,7 @@ module.exports = {
             'primary': '#a38fff',
             'secondary': '#060024',
             'accent': '#823ae9',
-            'background': '#050505',
+            'background': '#1D1D1F',
             'light-primary': '#a38fff',
             'light-secondary': '#e2ccff',
             'light-accent': '#7020df',
