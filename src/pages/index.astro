@@ -8,9 +8,31 @@ import "../styles/base.css";
 ---
 
 <Layout title="Victor Hugo Buntrok">
-  <div class="h-screen flex justify-center items-center">
+  <div class="h-screen flex flex-col gap-6 justify-center items-center">
     <div class="menu-background-pattern"></div>
     <Title client:load />
+    <div class="flex space-x-8 md:space-x-16 pt-4">
+      <a
+        href="https://github.com/Grellheist"
+        target="_blank"
+        rel="noreferrer"
+        aria-label=""
+      >
+        <i
+          class="devicon-github-original text-4xl md:text-5xl hover:text-accent cursor-pointer"
+        ></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/victorbuntrok/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label=""
+      >
+        <i
+          class="devicon-linkedin-plain text-4xl hover:text-accent md:text-5xl cursor-pointer"
+        ></i>
+      </a>
+    </div>
   </div>
   <div id="about" class="flex flex-col justify-center gap-12 p-12 md:h-screen">
     <h1
@@ -56,7 +78,6 @@ import "../styles/base.css";
       Skills
     </h1>
     <p>
-
       Tailwind, Typescript, Javascript, C, Rust, Python, Bootstrap, React,
       NextJS, Astro, Vercel, Git, Linux, Docker, SST, Vue, Svelte
     </p>
