@@ -2,6 +2,17 @@
 module.exports = {
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     theme: {
+        extend: {
+            keyframes: {
+                marquee: {
+                    '0%': { transform: 'translateX(0%)' },
+                    '100%': { transform: 'translateX(-100%)' },
+                },
+            }
+        },
+        animation: {
+            'marquee': 'marquee 25s linear infinite',
+        },
         colors: {
             'primary': '#a38fff',
             'secondary': '#060024',
@@ -14,7 +25,6 @@ module.exports = {
             'black': '#050505',
             'white': '#e5e7eb'
         },
-        extend: {},
     },
     plugins: [],
 }
