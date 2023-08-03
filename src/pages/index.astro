@@ -1,5 +1,5 @@
 ---
-import { astroI18n, t, l } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title";
 import Skills from "../components/Skills.astro";
@@ -77,7 +77,7 @@ astroI18n.init(Astro);
     <h1
       class="mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
-      Skills
+      {t("skills.title")}
     </h1>
     <div class="flex overflow-x-hidden">
       <Skills />
@@ -88,7 +88,7 @@ astroI18n.init(Astro);
     <h1
       class="pt-24 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
-      Projects
+      {t("projects.title")}
     </h1>
     <div class="flex justify-evenly">
       <div class="inline lg:hidden">

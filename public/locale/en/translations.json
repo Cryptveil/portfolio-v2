@@ -7,5 +7,11 @@
         "button": "Download CV",
         "cv": "../../files/curriculum.pdf",
         "cv_name": "Victor Hugo Buntrok - EN.pdf"
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "projects": {
+        "title": "Projects"
     }
 }

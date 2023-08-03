@@ -3,8 +3,8 @@ type SupportedLangCode = "en"
 type LangCode = DefaultLangCode | SupportedLangCode
 type RouteUri = | "/" 
 type RouteParams = {"/": undefined; }
-type TranslationPath = "about.title" | "about.description1" | "about.description2" | "about.description3" | "about.button" | "about.cv" | "about.cv_name"
-type TranslationOptions = { "about.title": {} | undefined; "about.description1": {} | undefined; "about.description2": {} | undefined; "about.description3": {} | undefined; "about.button": {} | undefined; "about.cv": {} | undefined; "about.cv_name": {} | undefined; }
+type TranslationPath = "about.title" | "about.description1" | "about.description2" | "about.description3" | "about.button" | "about.cv" | "about.cv_name" | "skills.title" | "projects.title"
+type TranslationOptions = { "about.title": {} | undefined; "about.description1": {} | undefined; "about.description2": {} | undefined; "about.description3": {} | undefined; "about.button": {} | undefined; "about.cv": {} | undefined; "about.cv_name": {} | undefined; "skills.title": {} | undefined; "projects.title": {} | undefined; }
 
 declare module "astro-i18n" {
 	export * from "astro-i18n/"
