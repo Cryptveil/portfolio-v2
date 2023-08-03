@@ -1,4 +1,5 @@
 ---
+import { astroI18n, t, l } from "astro-i18n";
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title";
 import Skills from "../components/Skills.astro";
@@ -6,6 +7,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 import "@fontsource/roboto";
 import projects from "../utils/projectList";
 import "../styles/base.css";
+astroI18n.init(Astro);
 ---
 
 <Layout title="Victor Hugo Buntrok">
@@ -48,35 +50,25 @@ import "../styles/base.css";
     <h1
       class="pt-12 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
-      About me
+      {t("about.title")}
     </h1>
     <div class="text-lg lg:text-xl gap-6 flex flex-col lg:pl-24 lg:pr-24 mb-12">
       <p>
-        My name is Victor Hugo Buntrok, but my friends usually call me just
-        Hugo. Currently a Network Administrator and a soon-to-be Computer
-        Engineer with a passion for programming. I'm a quick learner and I'm
-        always striving to be the best. I'm a dedicated problem-solver, and I
-        thrive on finding innovative solutions to real-world challenges.
+        {t("about.description1")}
       </p>
       <p>
-        I have a bunch of hobbies - maybe too many, but I like to keep myself
-        busy. When I'm not programming, I'm an avid audiophile, cinephile, and
-        love playing games. I also enjoy tinkering with custom keyboards and
-        building budget servers out of old computers.
+        {t("about.description2")}
       </p>
       <p>
-        I usually solve problems by myself, but I am also a very good team
-        player. I'm determined to excel and bring out the best in myself and
-        those around me. I am confident that I can be a valuable asset to any
-        web development team.
+        {t("about.description3")}
       </p>
       <span class="flex justify-center">
         <a
           class="px-4 py-2 transform font-semibold border transition duration-300 shadow hover:shadow-md hover:shadow-accent hover:bg-primary hover:text-black"
-          href="/files/curriculum.pdf"
-          download="Victor Hugo Buntrok.pdf"
+          href={t("about.cv")}
+          download={t("about.cv_name")}
         >
-          Download CV
+          {t("about.button")}
         </a>
       </span>
     </div>

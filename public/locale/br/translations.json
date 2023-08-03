@@ -1,0 +1,11 @@
+{
+    "about": {
+        "title": "Sobre mim",
+        "description1": "Meu nome é Victor Hugo Buntrok, mas meus amigos geralmente me chamam só de Hugo. Atualmente sou um Administrador de Redes e um futuro Engenheiro da Computação com paixão por programação. Tenho aprendizado rápido e estou sempre tentando ser o melhor no que faço. Sou um resolvedor de problemas dedicado e eu adoro encontrar soluções inovativas pra problemas reais.",
+        "description2": "Tenho vários hobbies - talvez até demais, mas gosto de me manter ocupado. Quando não estou programando, sou um audiófilo, cinéfilo e gosto de jogar. Também gosto de mexer em teclados mecânicos customizados e fazer PCs antigos virarem servidores.",
+        "description3": "Normalmente resolvo problemas sozinho, mas também sou um bom jogador em equipe. Estou sempre determinado a me destacar e a trazer o melhor de mim e das pessoas ao meu redor. Tenho certeza que eu seria uma peça valiosa para uma equipe de Desenvolvimento Web.",
+        "button": "Baixar Currículo",
+        "cv": "../../files/curriculo.pdf",
+        "cv_name": "Victor Hugo Buntrok.pdf"
+    }
+}
