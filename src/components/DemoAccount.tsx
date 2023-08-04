@@ -40,7 +40,7 @@ const DemoAccount = ({ demoAccount }: DemoAccountProps) => {
                 </button>
             </div>
             <div
-                className={`absolute w-full right-0 shadow-sm shadow-accent z-10 mt-2 origin-top-right rounded-md bg-black text-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none ${isMenuOpen ? "" : "hidden"
+                className={`absolute w-full right-0 shadow-sm shadow-accent z-10 mt-2 origin-top-right rounded-md bg-background text-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none ${isMenuOpen ? "" : "hidden"
                     }`}
                 role="menu"
                 aria-orientation="vertical"

@@ -14,6 +14,10 @@ export default function Navbar() {
 
             {matches && (
                 <div className='flex gap-12 pr-8 pb-3 font-bold'>
+                    <a href="/en" className='group hover:text-accent transition duration-300'>
+                        🇺🇸 English
+                        <span className="block max-w-0 group-hover:max-w-full rounded-full transition-all duration-200 h-0.5 bg-accent" />
+                    </a>
                     <a href="#about" className='group hover:text-accent transition duration-300'>
                         Sobre mim
                         <span className="block max-w-0 group-hover:max-w-full rounded-full transition-all duration-200 h-0.5 bg-accent" />
@@ -56,6 +60,7 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: 25 }}
                     className='fixed bg-background bottom-0 top-0 w-full h-screen items-center justify-center flex z-30'>
                     <div className='flex flex-col gap-24 text-lg font-semibold'>
+                        <a href="/en" className='hover:text-accent' onClick={() => setToggle(false)}>🇺🇸 English</a>
                         <a href="#about" className='hover:text-accent' onClick={() => setToggle(false)}>Sobre mim</a>
                         <a href="#skills" className='hover:text-accent' onClick={() => setToggle(false)}>Habilidades</a>
                         <a href="#projects" className='hover:text-accent' onClick={() => setToggle(false)}>Projetos</a>
