@@ -23,7 +23,7 @@ const DemoAccount = ({ demoAccount }: DemoAccountProps) => {
                     aria-expanded="true"
                     aria-haspopup="true"
                 >
-                    Conta demonstração
+                    Conta demonstra&ccedil;&atilde;o
                     <svg
                         className="-mr-1 ml-2 h-5 w-5"
                         xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const DemoAccount = ({ demoAccount }: DemoAccountProps) => {
                         tabIndex={-1}
                         id="menu-item-2"
                     >
-                        Usuário: {demoAccount.username}
+                        Usu&aacute;rio: {demoAccount.username}
                     </p>
                     <p
                         className="text-white block px-4 py-2 text-md font-bold"

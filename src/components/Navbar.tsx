@@ -8,14 +8,15 @@ export default function Navbar() {
 
     return (
         <nav className='fixed top-0 bg-background border-b border-secondary bg-opacity-70 backdrop-blur select-none w-full flex justify-between items-center pt-6 pb-3 font-medium z-50'>
-            <h1 className='font-bold text-lg pl-4 lg:pl-8 pb-3'>
-                <a href="#">Victor Buntrok</a>
-            </h1>
-
+            <a href="#">
+                <h1 className='font-bold text-lg pl-4 lg:pl-8 pb-3'>
+                    Victor Buntrok
+                </h1>
+            </a>
             {matches && (
                 <div className='flex gap-12 pr-8 pb-3 font-bold'>
                     <a href="/" className='group hover:text-accent transition duration-300'>
-                        🇧🇷 Português
+                        🇧🇷  Portugu&ecirc;s
                         <span className="block max-w-0 group-hover:max-w-full rounded-full transition-all duration-200 h-0.5 bg-accent" />
                     </a>
                     <a href="#about" className='group hover:text-accent transition duration-300'>
@@ -60,7 +61,7 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: 25 }}
                     className='fixed bg-background bottom-0 top-0 w-full h-screen items-center justify-center flex z-30'>
                     <div className='flex flex-col gap-24 text-lg font-semibold'>
-                        <a href="/" className='hover:text-accent' onClick={() => setToggle(false)}>🇧🇷 Português</a>
+                        <a href="/" className='hover:text-accent' onClick={() => setToggle(false)}>🇧🇷 Portugu&ecirc;s</a>
                         <a href="#about" className='hover:text-accent' onClick={() => setToggle(false)}>About</a>
                         <a href="#skills" className='hover:text-accent' onClick={() => setToggle(false)}>Skills</a>
                         <a href="#projects" className='hover:text-accent' onClick={() => setToggle(false)}>Projects</a>
