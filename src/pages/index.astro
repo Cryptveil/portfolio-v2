@@ -1,15 +1,15 @@
 ---
-import { astroI18n, t } from "astro-i18n";
+import Navbar from "../components/NavbarBR";
 import Layout from "../layouts/Layout.astro";
-import Title from "../components/Title";
+import Title from "../components/TitleBR";
 import Skills from "../components/Skills.astro";
-import ProjectCard from "../components/ProjectCard.astro";
+import ProjectCard from "../components/ProjectCardBR.astro";
 import "@fontsource/roboto";
-import projects from "../utils/projectList";
+import projects from "../utils/projectListBR";
 import "../styles/base.css";
-astroI18n.init(Astro);
 ---
 
+<Navbar client:load />
 <Layout title="Victor Hugo Buntrok">
   <div class="h-screen flex flex-col gap-6 justify-center items-center">
     <Title client:load />
@@ -50,25 +50,36 @@ astroI18n.init(Astro);
     <h1
       class="pt-12 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
-      {t("about.title")}
+      Sobre mim
     </h1>
     <div class="text-lg lg:text-xl gap-6 flex flex-col lg:pl-24 lg:pr-24 mb-12">
       <p>
-        {t("about.description1")}
+        Meu nome é Victor Hugo Buntrok, mas meus amigos geralmente me chamam só
+        de Hugo. Atualmente sou um Administrador de Redes e um futuro Engenheiro
+        da Computação com paixão por programação. Tenho aprendizado rápido e
+        estou sempre tentando ser o melhor no que faço. Sou um resolvedor de
+        problemas dedicado e eu adoro encontrar soluções inovativas pra
+        problemas reais.
       </p>
       <p>
-        {t("about.description2")}
+        Tenho vários hobbies - talvez até demais, mas gosto de me manter
+        ocupado. Quando não estou programando, sou um audiófilo, cinéfilo e
+        gosto de jogar. Também gosto de mexer em teclados mecânicos customizados
+        e fazer PCs antigos virarem servidores.
       </p>
       <p>
-        {t("about.description3")}
+        Normalmente resolvo problemas sozinho, mas também sou um bom jogador em
+        equipe. Estou sempre determinado a me destacar e a trazer o melhor de
+        mim e das pessoas ao meu redor. Tenho certeza que eu seria uma peça
+        valiosa para uma equipe de Desenvolvimento Web.
       </p>
       <span class="flex justify-center">
         <a
           class="px-4 py-2 transform font-semibold border transition duration-300 shadow hover:shadow-md hover:shadow-accent hover:bg-primary hover:text-black"
-          href={t("about.cv")}
-          download={t("about.cv_name")}
+          href="/files/curriculo.pdf"
+          download="Victor Hugo Buntrok.pdf"
         >
-          {t("about.button")}
+          Baixar Currículo
         </a>
       </span>
     </div>
@@ -77,7 +88,7 @@ astroI18n.init(Astro);
     <h1
       class="mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
-      {t("skills.title")}
+      Habilidades
     </h1>
     <div class="flex overflow-x-hidden">
       <Skills />
@@ -88,7 +99,7 @@ astroI18n.init(Astro);
     <h1
       class="pt-24 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
-      {t("projects.title")}
+      Projetos
     </h1>
     <div class="flex justify-evenly">
       <div class="inline lg:hidden">
