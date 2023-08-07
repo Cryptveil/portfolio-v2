@@ -8,7 +8,7 @@ export default function Title() {
             </h1>
             <span className='text-xl md:text-2xl lg:text-3xl xl:text-4xl'>
                 I'm a
-                <span className='font-semibold text-accent'>
+                <span className='font-extrabold text-accent'>
                     <Typewriter
                         words={[' Fullstack Developer.', ' Network Administrator.', ' Linux Superuser.']}
                         loop={0}

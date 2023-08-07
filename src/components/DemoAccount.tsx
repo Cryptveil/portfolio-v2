@@ -18,7 +18,7 @@ const DemoAccount = ({ demoAccount }: DemoAccountProps) => {
                 <button
                     type="button"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="inline-flex w-full justify-center rounded-lg border transition duration-300 font-semibold text-lg border-white px-4 py-2 text-white hover:bg-primary hover:text-black shadow-sm focus:bg-primary focus:text-black focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white"
+                    className="inline-flex w-full justify-center rounded-lg border transition duration-300 font-semibold text-lg border-white px-4 py-2 text-white hover:bg-primary hover:text-accent shadow-sm focus:bg-primary focus:text-accent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white"
                     id="menu-button"
                     aria-expanded="true"
                     aria-haspopup="true"
@@ -40,7 +40,7 @@ const DemoAccount = ({ demoAccount }: DemoAccountProps) => {
                 </button>
             </div>
             <div
-                className={`absolute w-full right-0 shadow-sm shadow-accent z-10 mt-2 origin-top-right rounded-md bg-background text-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none ${isMenuOpen ? "" : "hidden"
+                className={`absolute w-full right-0 shadow-sm shadow-accent z-10 mt-2 origin-top-right rounded-md bg-background text-white ring-1 ring-black ring-opacity-5 focus:outline-none ${isMenuOpen ? "" : "hidden"
                     }`}
                 role="menu"
                 aria-orientation="vertical"

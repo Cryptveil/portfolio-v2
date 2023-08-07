@@ -4,9 +4,9 @@ const { project } = Astro.props;
 ---
 
 <div
-  class="max-w-sm mb-12 rounded-lg overflow-hidden shadow-sm shadow-accent"
+  class="max-w-sm mb-12 rounded-lg overflow-hidden shadow-sm shadow-primary bg-secondary"
 >
-  <img class="w-full pointer-events-none" src={project.picture} alt={project.alt} />
+  <img class="w-full pointer-events-none shadow-sm shadow-primary" src={project.picture} alt={project.alt} />
   <div class="px-6 py-4 flex-1 flex flex-col">
     <div class="font-bold text-xl md:text-2xl mb-2">{project.title}</div>
     <p class="text-md md:text-lg">
@@ -34,7 +34,7 @@ const { project } = Astro.props;
         target="_blank"
         rel="noreferrer"
         aria-label=""
-        class="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 shadow hover:shadow-lg hover:bg-primary hover:text-black"
+        class="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 shadow hover:shadow-lg hover:bg-primary hover:text-accent"
       >
         Demo ao vivo
       </a>
@@ -43,7 +43,7 @@ const { project } = Astro.props;
         target="_blank"
         rel="noreferrer"
         aria-label=""
-        class="inline-flex border hover:bg-primary shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:text-black"
+        class="inline-flex border hover:bg-primary shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:text-accent"
       >
         C&oacute;digo Fonte
       </a>
