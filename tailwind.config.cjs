@@ -14,14 +14,10 @@ module.exports = {
             'marquee': 'marquee 25s linear infinite',
         },
         colors: {
-            'primary': '#a38fff',
+            'primary': '#e5e7eb',
             'secondary': '#060024',
             'accent': '#823ae9',
             'background': '#1D1D1F',
-            'light-primary': '#a38fff',
-            'light-secondary': '#e2ccff',
-            'light-accent': '#7020df',
-            'light-background': '#fafafa',
             'black': '#050505',
             'white': '#e5e7eb'
         },
