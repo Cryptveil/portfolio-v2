@@ -1,4 +1,5 @@
 import whisker from "/projects/whisker.png"
+import monify from "/projects/monify.png"
 
 const projects = [
     {
@@ -20,6 +21,22 @@ const projects = [
             "PlanetScale",
         ],
         account: { username: "demo123", password: "Jj@7TsFk" }
+    },
+    {
+        picture: monify,
+        alt: "Um site de finanças pessoais",
+        title: "Monify",
+        description: "Monify é um site de finanças pessoais, e é atualmente meu projeto em andamento.",
+        demo: "https://monify-beta.vercel.app/",
+        source: "https://github.com/Grellheist/monify",
+        technologies: [
+            "TailwindCSS",
+            "SvelteKit",
+            "Typescript",
+            "Supabase",
+            "MySQL",
+            "Vercel",
+        ],
     },
 ]
 
