@@ -37,6 +37,7 @@ const projects = [
             "MySQL",
             "Vercel",
         ],
+        account: { username: "N/A", password: "N/A" }
     },
 ]
 
