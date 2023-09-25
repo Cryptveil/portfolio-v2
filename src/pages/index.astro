@@ -10,133 +10,106 @@ import "../styles/base.css";
 ---
 
 <Layout title="Victor Hugo Buntrok">
-    <Navbar client:load />
-    <div class="h-screen flex flex-col gap-6 justify-center items-center">
-        <Title client:load />
-        <div class="flex space-x-8 md:space-x-16 pt-4">
-            <a
-                href="https://github.com/Grellheist"
-                target="_blank"
-                rel="noreferrer"
-                aria-label=""
-            >
-                <i
-                    class="devicon-github-original text-4xl md:text-5xl hover:text-accent cursor-pointer"
-                ></i>
-            </a>
-            <a
-                href="https://www.linkedin.com/in/victorbuntrok/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label=""
-            >
-                <i
-                    class="devicon-linkedin-plain text-4xl hover:text-accent md:text-5xl cursor-pointer"
-                ></i>
-            </a>
-            <a
-                href="mailto:victorbuntrok@outlook.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label=""
-            >
-                <i
-                    class="fa fa-envelope text-4xl hover:text-accent md:text-5xl cursor-pointer"
-                    aria-hidden="true"></i>
-            </a>
-        </div>
+  <Navbar client:load />
+  <div class="h-screen flex flex-col gap-6 justify-center items-center">
+    <Title client:load />
+    <div class="flex space-x-8 md:space-x-16 pt-4">
+      <a
+        href="https://github.com/Grellheist"
+        target="_blank"
+        rel="noreferrer"
+        aria-label=""
+      >
+        <i
+          class="devicon-github-original text-4xl md:text-5xl hover:text-accent cursor-pointer"
+        ></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/victorbuntrok/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label=""
+      >
+        <i
+          class="devicon-linkedin-plain text-4xl hover:text-accent md:text-5xl cursor-pointer"
+        ></i>
+      </a>
+      <a
+        href="mailto:victorbuntrok@outlook.com"
+        target="_blank"
+        rel="noreferrer"
+        aria-label=""
+      >
+        <i
+          class="fa fa-envelope text-4xl hover:text-accent md:text-5xl cursor-pointer"
+          aria-hidden="true"></i>
+      </a>
     </div>
-    <div
-        id="about"
-        class="flex flex-col justify-center gap-12 p-12 md:h-screen"
+  </div>
+  <div id="about" class="flex flex-col justify-center gap-12 p-12 md:h-screen">
+    <h1
+      class="pt-12 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
     >
-        <h1
-            class="pt-12 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
+      Sobre mim
+    </h1>
+    <div class="text-lg lg:text-xl gap-6 flex flex-col lg:pl-24 lg:pr-24 mb-12">
+      <p>
+        Meu nome &eacute; Victor Hugo Buntrok, mas meus amigos geralmente me
+        chamam s&oacute; de Hugo. Atualmente sou um Administrador de Redes e um
+        futuro Engenheiro da Computa&ccedil;&atilde;o com paix&atilde;o por
+        programa&ccedil;&atilde;o. Tenho aprendizado r&aacute;pido e estou
+        sempre tentando ser o melhor no que fa&ccedil;o. Sou um resolvedor de
+        problemas dedicado e eu adoro encontrar solu&ccedil;&otilde;es
+        inovativas pra problemas reais.
+      </p>
+      <p>
+        Tenho v&aacute;rios hobbies - talvez at&eacute; demais, mas gosto de me
+        manter ocupado. Quando n&atilde;o estou programando, sou um
+        audi&oacute;filo, cin&eacute;filo e gosto de jogar. Tamb&eacute;m gosto
+        de montar teclados mec&acirc;nicos customizados e fazer computadores
+        antigos virarem servidores.
+      </p>
+      <p>
+        Normalmente resolvo problemas sozinho, mas tamb&eacute;m sou um bom
+        jogador em equipe. Estou sempre determinado a me destacar e a trazer o
+        melhor de mim e das pessoas ao meu redor. Tenho certeza que eu seria uma
+        pe&ccedil;a valiosa para uma equipe de Desenvolvimento Web.
+      </p>
+      <span class="flex justify-center">
+        <a
+          class="rounded-lg px-4 py-2 transform font-semibold border transition duration-300 shadow hover:shadow-accent hover:shadow-md hover:bg-primary hover:text-accent"
+          href="/files/curriculo.pdf"
+          download="Victor Hugo Buntrok.pdf"
         >
-            Sobre mim
-        </h1>
-        <div
-            class="text-lg lg:text-xl gap-6 flex flex-col lg:pl-24 lg:pr-24 mb-12"
-        >
-            <p>
-                Meu nome &eacute; Victor Hugo Buntrok, mas meus amigos
-                geralmente me chamam s&oacute; de Hugo. Atualmente sou um
-                Administrador de Redes e um futuro Engenheiro da
-                Computa&ccedil;&atilde;o com paix&atilde;o por
-                programa&ccedil;&atilde;o. Tenho aprendizado r&aacute;pido e
-                estou sempre tentando ser o melhor no que fa&ccedil;o. Sou um
-                resolvedor de problemas dedicado e eu adoro encontrar
-                solu&ccedil;&otilde;es inovativas pra problemas reais.
-            </p>
-            <p>
-                Tenho v&aacute;rios hobbies - talvez at&eacute; demais, mas
-                gosto de me manter ocupado. Quando n&atilde;o estou programando,
-                sou um audi&oacute;filo, cin&eacute;filo e gosto de jogar.
-                Tamb&eacute;m gosto de montar teclados mec&acirc;nicos
-                customizados e fazer computadores antigos virarem servidores.
-            </p>
-            <p>
-                Normalmente resolvo problemas sozinho, mas tamb&eacute;m sou um
-                bom jogador em equipe. Estou sempre determinado a me destacar e
-                a trazer o melhor de mim e das pessoas ao meu redor. Tenho
-                certeza que eu seria uma pe&ccedil;a valiosa para uma equipe de
-                Desenvolvimento Web.
-            </p>
-            <span class="flex justify-center">
-                <a
-                    class="rounded-lg px-4 py-2 transform font-semibold border transition duration-300 shadow hover:shadow-accent hover:shadow-md hover:bg-primary hover:text-accent"
-                    href="/files/curriculo.pdf"
-                    download="Victor Hugo Buntrok.pdf"
-                >
-                    Baixar Curr&iacute;culo
-                </a>
-            </span>
-        </div>
+          Baixar Curr&iacute;culo
+        </a>
+      </span>
     </div>
-    <div id="skills" class="h-screen p-12 flex flex-col gap-12 justify-center">
-        <h1
-            class="mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
-        >
-            Habilidades
-        </h1>
-        <div class="flex overflow-x-hidden">
-            <Skills />
-            <Skills />
-        </div>
+  </div>
+  <div id="skills" class="h-screen p-12 flex flex-col gap-12 justify-center">
+    <h1
+      class="mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
+    >
+      Habilidades
+    </h1>
+    <div class="flex overflow-x-hidden">
+      <Skills />
+      <Skills />
     </div>
-    <div id="projects" class="flex-grow flex flex-col gap-12 justify-center">
-        <h1
-            class="pt-24 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
-        >
-            Projetos
-        </h1>
-        <div class="flex justify-evenly">
-            <div class="inline lg:hidden">
-                {
-                    projects
-                        .slice(0, 1)
-                        .map((project) => <ProjectCard project={project} />)
-                }
-            </div>
-            <div class="hidden lg:flex xl:hidden space-x-8">
-                {
-                    projects
-                        .slice(0, 2)
-                        .map((project) => <ProjectCard project={project} />)
-                }
-            </div>
-            <div class="hidden xl:inline-flex space-x-8">
-                {
-                    projects
-                        .slice(0, 3)
-                        .map((project) => <ProjectCard project={project} />)
-                }
-            </div>
-        </div>
-        <style>
-            body {
-                font-family: "Roboto", sans-serif;
-            }
-        </style>
+  </div>
+  <div id="projects" class="flex-grow flex flex-col gap-12 justify-center">
+    <h1
+      class="pt-24 mb-6 flex justify-center text-3xl lg:text-5xl font-bold text-accent"
+    >
+      Projetos
+    </h1>
+    <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+      {projects.map((project) => <ProjectCard project={project} />)}
     </div>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </div>
 </Layout>

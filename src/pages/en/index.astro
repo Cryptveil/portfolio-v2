@@ -10,7 +10,7 @@ import "../../styles/base.css";
 ---
 
 <Layout title="Victor Hugo Buntrok">
-<Navbar client:load />
+  <Navbar client:load />
   <div class="h-screen flex flex-col gap-6 justify-center items-center">
     <Title client:load />
     <div class="flex space-x-8 md:space-x-16 pt-4">
@@ -100,28 +100,8 @@ import "../../styles/base.css";
     >
       Projects
     </h1>
-    <div class="flex justify-evenly">
-      <div class="inline lg:hidden">
-        {
-          projects
-            .slice(0, 1)
-            .map((project) => <ProjectCard project={project} />)
-        }
-      </div>
-      <div class="hidden lg:flex xl:hidden space-x-8">
-        {
-          projects
-            .slice(0, 2)
-            .map((project) => <ProjectCard project={project} />)
-        }
-      </div>
-      <div class="hidden xl:inline-flex space-x-8">
-        {
-          projects
-            .slice(0, 3)
-            .map((project) => <ProjectCard project={project} />)
-        }
-      </div>
+    <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+      {projects.map((project) => <ProjectCard project={project} />)}
     </div>
     <style>
       body {
