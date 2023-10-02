@@ -26,16 +26,13 @@ const projects = [
         picture: monify,
         alt: "Um site de finanças pessoais",
         title: "Monify",
-        description: "Monify é um site de finanças pessoais, e é atualmente meu projeto em andamento.",
+        description: "Monify é um site de finanças pessoais, eu planejava fazer ele completamente utilizável, mas atualmente é só um frontend sem funções (não tenho planos de finalizar esse projeto).",
         demo: "https://monify-beta.vercel.app/",
         source: "https://github.com/Grellheist/monify",
         technologies: [
             "TailwindCSS",
             "SvelteKit",
             "Typescript",
-            "Supabase",
-            "MySQL",
-            "Vercel",
         ],
         account: { username: "N/A", password: "N/A" }
     },

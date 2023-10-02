@@ -26,16 +26,13 @@ const projects = [
         picture: monify,
         alt: "A finance website",
         title: "Monify",
-        description: "Monify is a personal finance website, and it's currently my ongoing project.",
+        description: "Monify is a personal finance website, and it was planned to be fully usable, but for now the project is done (it's only a frontend with no functionality).",
         demo: "https://monify-beta.vercel.app/",
         source: "https://github.com/Grellheist/monify",
         technologies: [
             "TailwindCSS",
             "SvelteKit",
             "Typescript",
-            "Supabase",
-            "MySQL",
-            "Vercel",
         ],
         account: { username: "N/A", password: "N/A" }
     },
